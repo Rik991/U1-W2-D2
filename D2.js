@@ -85,7 +85,7 @@ if (totale1 > 50) {
   console.log("Spedizione gratuita, totale € ", totale1);
 } else {
   totale1 = totale1 + 10;
-  console.log("Spedizione al costo di 10 euro, totale € ", totale);
+  console.log("Spedizione al costo di 10 euro, totale € ", totale1);
 }
 
 /* ESERCIZIO 7
@@ -96,10 +96,24 @@ if (totale1 > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const num7 = 8;
-const num8 = 5;
-const num9 = 15;
-
+const a = 70;
+const b = 80;
+const c = 100;
+if (a > b) {
+  if (c > a) {
+    console.log(c, a, b);
+  } else if (c > b && c < a) {
+    console.log(a, c, b);
+  }
+} else if (b > a && b > c) {
+  if (a > c) {
+    console.log(b, a, c);
+  } else {
+    console.log(b, c, a);
+  }
+} else if (a < b && b < c) {
+  console.log(c, b, a);
+}
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
@@ -188,9 +202,8 @@ console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let array = [];
-array.unshift(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+array.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 console.log(array);
-
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
