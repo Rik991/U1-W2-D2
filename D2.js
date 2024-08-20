@@ -78,14 +78,15 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-// let ShoppingCartBlack = (totalShoppingCart*20) / 100;
+let offerta = (totalShoppingCart * 20) / 100;
+let totale1 = totalShoppingCart - offerta;
 
-// if (totalShoppingCart > 50) {
-//   console.log("Spedizione gratuita, totale € ", totalShoppingCart / ShoppingCartBlack);
-// } else {
-//   totale = totalShoppingCart + 10;
-//   console.log("Spedizione al costo di 10 euro, totale € ", totale / ShoppingCartBlack);
-// }
+if (totale1 > 50) {
+  console.log("Spedizione gratuita, totale € ", totale);
+} else {
+  totale = totale1 + 10;
+  console.log("Spedizione al costo di 10 euro, totale € ", totale);
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
