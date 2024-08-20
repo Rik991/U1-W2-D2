@@ -61,7 +61,7 @@ if (num3 === 8 || num4 === 8 || num3 + num4 === 8 || num3 - num4 === 8 || num4 -
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart = 45;
+let totalShoppingCart = 100;
 let totale;
 
 if (totalShoppingCart > 50) {
@@ -82,9 +82,9 @@ let offerta = (totalShoppingCart * 20) / 100;
 let totale1 = totalShoppingCart - offerta;
 
 if (totale1 > 50) {
-  console.log("Spedizione gratuita, totale € ", totale);
+  console.log("Spedizione gratuita, totale € ", totale1);
 } else {
-  totale = totale1 + 10;
+  totale1 = totale1 + 10;
   console.log("Spedizione al costo di 10 euro, totale € ", totale);
 }
 
